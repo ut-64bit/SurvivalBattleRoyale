@@ -15,6 +15,9 @@
     execute if score $Game Count matches 2.. as @a at @s run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 1 1.0
     execute if score $Game Count matches 2.. run tellraw @a [{"text": "[!]","color":"white"}," ",[{"text":"残り人数は ","color":"white"},{"score":{"name":"$Game","objective":"Count"},"color":"red"},{"text":" です","color": "white"}]]
 
+# 生存者カウント
+    execute store result score $Game Count if entity @a[gamemode=survival]
+
 # 進捗
     execute if score $Game Phase matches 1 run advancement grant @s only survival_battle_royale:adv/deoti
     execute if score $Game Count matches 2 as @a[gamemode=survival] run advancement grant @s only survival_battle_royale:adv/last_battle
