@@ -5,6 +5,8 @@
     team empty Spectator
 
 # ワールドボーダー設定
+    kill @e[type=marker,tag=BorderCenter]
+    summon marker ~ 60 ~ {Tags:["BorderCenter"]}
     worldborder warning distance 10
     worldborder center ~ ~
     worldborder set 1000 0

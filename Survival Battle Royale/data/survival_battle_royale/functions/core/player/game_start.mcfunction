@@ -8,7 +8,6 @@
     team join NoPvP @s
 
 # 演出とか
-    tp @s @s
     effect clear @s
     effect give @s blindness 1 0 false
     effect give @s instant_health 10 1 false

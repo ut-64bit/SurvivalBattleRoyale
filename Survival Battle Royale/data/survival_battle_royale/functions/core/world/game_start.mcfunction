@@ -4,6 +4,9 @@
 # プレイヤーごとの
     execute as @a run function survival_battle_royale:core/player/game_start
 
+# バシルーラ
+    execute as @e[type=marker,tag=BorderCenter,limit=1] at @s run spreadplayers ~ ~ 100 400 false @a
+
 # ボスバー
     execute store result bossbar worldborder max run scoreboard players get 縮小待機時間 Setting
     bossbar set worldborder value 0

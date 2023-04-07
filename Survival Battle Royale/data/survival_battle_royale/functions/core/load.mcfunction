@@ -3,6 +3,7 @@
 
 #>
 # @public
+  #declare tag BorderCenter
   #declare storage temp:
   #declare score_holder $Game
   #declare score_holder $StartCountDown
