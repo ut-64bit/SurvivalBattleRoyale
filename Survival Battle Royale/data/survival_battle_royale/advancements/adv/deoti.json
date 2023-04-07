@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wooden_pickaxe"
+        },
+        "title": "出オチ",
+        "description": "ワールドボーダーが縮小し始める前に死亡する",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "survival_battle_royale:adv/survivor",
+    "criteria": {
+        "kill_player": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

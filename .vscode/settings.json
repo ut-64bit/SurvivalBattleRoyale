@@ -1,0 +1,9 @@
+{
+    "datapack.env.cmdVersion": "1.18.2",
+    "datapack.lint.idOmitDefaultNamespace": null,
+    "datapack.lint.nameOfNbtCompoundTagKeys": null,
+    "datapack.lint.nameOfObjectives": null,
+    "datapack.lint.nameOfScoreHolders": null,
+    "datapack.lint.nameOfTags": null,
+    "datapack.lint.nameOfTeams": null
+}

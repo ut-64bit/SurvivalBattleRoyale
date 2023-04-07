@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "trigger": {
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "function": "survival_battle_royale:core/install"
+    }
+}

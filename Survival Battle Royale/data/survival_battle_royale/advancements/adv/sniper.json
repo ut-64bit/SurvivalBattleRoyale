@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:spectral_arrow"
+        },
+        "title": "スナイパー",
+        "description": "50m以上離れたプレイヤーを倒す",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "survival_battle_royale:adv/survivor",
+    "criteria": {
+        "kill_player": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:player",
+                            "distance": {
+                                "horizontal": {
+                                    "min": 50
+                                }
+                            }
+                        }
+                    }
+                ],
+                "killing_blow": {
+                    "is_projectile": true
+                }
+            }
+        }
+    }
+}
