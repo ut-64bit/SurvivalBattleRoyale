@@ -13,5 +13,9 @@
     bossbar set worldborder color blue
     bossbar set worldborder visible true
 
+# 天候と時間
+    time set day
+    weather clear 300
+
 # NextPhase
     scoreboard players set $Game Phase 1
