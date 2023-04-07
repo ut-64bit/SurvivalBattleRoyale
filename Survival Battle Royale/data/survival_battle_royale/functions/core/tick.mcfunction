@@ -1,6 +1,9 @@
 #> survival_battle_royale:core/tick
 # @within tag/function minecraft:tick
 
+# 暗視ぽい
+    effect give @a night_vision 60 0 true
+
 # 生存者何人だ
     execute store result score $Game Count if entity @a[gamemode=survival]
 
