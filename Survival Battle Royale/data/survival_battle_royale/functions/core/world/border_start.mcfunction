@@ -10,4 +10,4 @@
     bossbar set worldborder max 1000
     bossbar set worldborder value 1000
     bossbar set worldborder name {"text": "ワールドボーダー","color": "dark_red"}
-    worldborder set 30 3600
+    worldborder set 30 2700
