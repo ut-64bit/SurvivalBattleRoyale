@@ -10,6 +10,7 @@
   #declare score_holder $W.BorderCountDown
   #declare score_holder $20
   #declare score_holder 縮小待機時間
+  #declare score_holder 縮小時間
 
 # ストレージ
     data modify storage temp: _ set value {}
@@ -44,4 +45,5 @@
     worldborder set 1000 0
 
     ## 設定
-    scoreboard players set 縮小待機時間 Setting 6000
+    execute unless score 縮小待機時間 Setting matches -2147483648..2147483647 run scoreboard players set 縮小待機時間 Setting 6000
+    execute unless score 縮小時間 Setting matches -2147483648..2147483647 run scoreboard players set 縮小時間 Setting 45
